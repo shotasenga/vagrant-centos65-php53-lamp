@@ -1,3 +1,9 @@
+Usage
+=====
+
+`vagrant init senta/centos65-php53-lamp` then `vagrant up` to run Vagrant VM.
+
+
 Description
 ===========
 
@@ -16,7 +22,3 @@ Requirements
 
 Attributes
 ==========
-
-Usage
-=====
-TODO
