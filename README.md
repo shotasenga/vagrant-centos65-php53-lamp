@@ -22,3 +22,15 @@ Requirements
 
 Attributes
 ==========
+
+
+TODO
+==========
+- Xdebug
+- memcache
+- redis
+- apc
+- mcrypt
+- cmposer
+- PHPunit
+- basic usage
