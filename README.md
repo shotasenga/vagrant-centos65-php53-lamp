@@ -26,7 +26,6 @@ Attributes
 
 TODO
 ==========
-- Xdebug
 - memcache
 - redis
 - apc

@@ -25,12 +25,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Enable provisioning with chef solo
   config.vm.provision "chef_solo" do |chef|
 
+    chef.add_recipe "yum-epel"
     chef.add_recipe "mysql::client"
     chef.add_recipe "mysql::server"
-    chef.add_recipe "php"
-    chef.add_recipe "php::module_mysql"
-    chef.add_recipe "php::module_gd"
     chef.add_recipe "httpd"
+    chef.add_recipe "php"
 
     chef.json = {
       :mysql => {
@@ -38,16 +37,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         server_repl_password: "rootpass",
         server_debian_password: "rootpass",
         bind_address: "127.0.0.1"
-      },
-
-      :php => {
-        :packages => ["php",
-                      "php-devel",
-                      "php-cli",
-                      "php-pear",
-                      "php-mbstring",
-                      "php-pdo",
-                      "php-xml"]
       }
     }
   end
