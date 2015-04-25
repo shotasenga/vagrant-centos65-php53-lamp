@@ -11,7 +11,7 @@ minimum LAMP Box for Vagrant
 
 - CentOS 6.5
 - PHP 5.3
-- MySQL 5.1
+- MySQL 5.1 (root user password is "rootpass")
 - Apache 2.2.15
 
 Requirements
